@@ -1,4 +1,6 @@
-public class PcFactory implements ComputerAbstractractFactory {
+package AbstractFactoryPattern;
+
+public class PcFactory implements ComputerAbstractFactory {
 
     private String ram;
     private String hdd;
@@ -9,6 +11,10 @@ public class PcFactory implements ComputerAbstractractFactory {
         this.hdd=hdd;
         this.cpu=cpu;
     }
+
+    public PcFactory() {
+    }
+
     @Override
     public Computer createComputer() {
         return new Pc(ram,hdd,cpu);

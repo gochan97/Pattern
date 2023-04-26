@@ -1,4 +1,6 @@
-public class ServerFactory implements ComputerAbstractractFactory{
+package AbstractFactoryPattern;
+
+public class ServerFactory extends PcFactory implements ComputerAbstractFactory{
 
     private String ram;
     private String hdd;
